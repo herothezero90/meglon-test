@@ -323,6 +323,15 @@ hr.gradient-line {
 }
 
 /* Cards  */
+
+.h3 {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    text-shadow: var(--text-shadow);
+    color: #e1e1e1;
+    padding-bottom: 1em;
+}
+
 .cards-section {
     padding: 50px 0;
     background-color: #24272A;
@@ -414,6 +423,16 @@ hr.gradient-line {
 
 /* Responsive Styles */
 @media (max-width: 430px) {
+    .hero h1 {
+        padding-top: 10px;
+        font-size: 4rem;
+    }
+
+    .hero h2 {
+        padding-bottom: 10px;
+        font-size: 2rem;
+    }
+
     .navbar-collapse {
         border-radius: 20px;
         background-color: var(--secondary-color);
@@ -434,11 +453,16 @@ hr.gradient-line {
         background-color: var(--secondary-color) !important;
         border: 1px solid white !important;
     }
+
+    .cards-section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 @media (min-width: 1500px) {
     .hero h1 {
-        font-size: 7rem;
+        font-size: 9rem;
     }
 
     .hero .btn-primary {
@@ -446,23 +470,23 @@ hr.gradient-line {
     }
 
     .hero-p {
-        font-size: 1.5rem;/
+        font-size: 1.7rem;/
     }
 
     .navbar-brand {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     .navbar-nav .nav-link {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 
     .navbar-nav .nav-item .nav-link i {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     .nav-link .fa-xl {
-        font-size: 2.5rem;
+        font-size: 2.7rem;
     }
 }
 
