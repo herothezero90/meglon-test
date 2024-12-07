@@ -10,10 +10,8 @@ $(document).ready(function () {
     };
   }
 
-  // Remove any hash from the URL on page load to ensure we start at the top
   history.replaceState("", document.title, window.location.pathname + window.location.search);
 
-  // Ensure the window is scrolled to the top after load
   $(window).on('load', function() {
     window.scrollTo(0, 0);
   });
@@ -37,16 +35,11 @@ $(document).ready(function () {
       });
     },
     init: function () {
-      // Originally, we had:
       // const $cards = $(".animated-card");
       // const $sections = $(".animated-section");
 
-      // Calls like:
       // this.animateElements($cards, "slide-up");
       // this.animateElements($sections, "slide-up");
-
-      // We are removing these calls to prevent about us and cards from animating.
-      // Now no elements are animated by this module.
     },
   };
 
@@ -54,7 +47,7 @@ $(document).ready(function () {
   const shopButtonModule = {
     init: function () {
       $(".shop-button").on("click", function (event) {
-        event.preventDefault(); // Prevent default link behavior
+        event.preventDefault();
         window.open("https://autofather.com/", "_blank");
       });
     },
@@ -69,8 +62,7 @@ $(document).ready(function () {
     },
   };
 
-  // Initialize all modules
-  animationModule.init();    // No animations are triggered now for cards or about us
+  animationModule.init();    
   shopButtonModule.init();
   navbarCollapseModule.init();
 });
